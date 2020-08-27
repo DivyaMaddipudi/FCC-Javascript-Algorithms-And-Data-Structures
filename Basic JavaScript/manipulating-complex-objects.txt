@@ -1,0 +1,27 @@
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+
+  {
+    "artist": "DSP",
+    "title": "Music Director",
+    "release_year": 1993,
+    "formats": [
+      "CD",
+      "Cassete",
+      "LP"
+    ],
+    "gold": true
+  }
+];
+
+
