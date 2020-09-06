@@ -1,0 +1,6 @@
+let yourArray = ["divya", 1, false,
+                 {
+                   hello:1,
+                   world:2
+                 }, "satya"
+                 ]; // Change this line
