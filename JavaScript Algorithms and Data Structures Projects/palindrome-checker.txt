@@ -1,0 +1,20 @@
+function palindrome(str) {
+  
+  
+  str = str.toLowerCase().replace(/[\W_]/g, "");
+  var arr = str.split("");
+
+  var newArr = [];
+  console.log(arr)
+  for(let i=0;i<arr.length;i++){
+    
+      newArr.unshift(arr[i]);
+    
+  }
+  
+  var str1 = newArr.join("");
+  console.log(str1);
+  return str1 === str;
+}
+
+palindrome("race car");
