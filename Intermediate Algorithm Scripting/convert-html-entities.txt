@@ -1,0 +1,22 @@
+function convertHTML(str) {
+  var symbols = {
+    "&" : "&amp;",
+    "<" : "&lt;",
+    ">" : "&gt;",
+    '"' : "&quot;",
+    "'" : "&apos;"
+  };
+
+  var str1 = str;
+  for(let i=0;i<str.length;i++) {
+    if(str[i] in symbols) {
+      var index = str.indexOf(str[i]);
+      console.log(str[i]);
+      str1 = str1.replace(str[i], symbols[str[i]]);
+      console.log(str1);   
+    }
+  }
+  return str1;
+}
+
+convertHTML("Dolce's & 'Gabbana' >");

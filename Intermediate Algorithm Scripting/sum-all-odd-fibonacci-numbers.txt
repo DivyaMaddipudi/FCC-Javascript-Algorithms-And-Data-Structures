@@ -1,0 +1,22 @@
+function sumFibs(num) {
+  if(num == 1) {
+    return num;
+  } else {
+    var pp = 0;
+    var p = 1;
+    var  term;
+    var sum = 1;
+    for(let i=0;i<=num;i = i+2) {
+      term = p + pp;
+      if(term % 2 !== 0 && term <= num){
+        sum = sum + term;
+      }
+      pp = p;
+      p = term; 
+    }
+    console.log(sum)
+    return sum;
+  }
+}
+
+sumFibs(5000);
