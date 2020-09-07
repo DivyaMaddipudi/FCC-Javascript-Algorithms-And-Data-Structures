@@ -1,0 +1,18 @@
+function fearNotLetter(str) {
+  var arr = str.toLowerCase().split("");
+  arr.sort();
+  var min = arr[0].charCodeAt(0);
+  var max = arr[arr.length - 1].charCodeAt(0);
+
+  var value; 
+  for(let i=min; i<=max;i++) {
+    
+    if(arr.indexOf(String.fromCharCode(i)) < 0) {
+      console.log(String.fromCharCode(i))
+      value = String.fromCharCode(i);
+    }
+  }
+  return value;
+}
+
+fearNotLetter("Eabc");

@@ -1,0 +1,17 @@
+function destroyer(arr) {
+  var args = Array.prototype.slice.call(arguments);
+  console.log(args);
+    for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    for (var j = 0; j < args.length; j++) {
+      if (arr[i] === args[j]) {
+        console.log(arr[i]);
+        delete arr[i];
+      }
+    }
+  }
+  console.log(arr);
+  return arr.filter(Boolean);
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
